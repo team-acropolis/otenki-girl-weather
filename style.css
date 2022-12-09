@@ -12,24 +12,82 @@
     font-style: normal;
 }
 
-
 * {
-    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 body {
-    background-image: url('./bg/Hina_and_Hodaka_eat_lunch_together.png');
+    /* background-image: url('./bg/Hina_and_Hodaka_eat_lunch_together.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 .wrap {
     width: 90%;
+}
+
+body.bg1 {
+    background: url('./bg/Hina_and_Hodaka_eat_lunch_together.png') no-repeat center/cover;
+}
+
+body.bg2 {
+    background: url('./bg/Hina_cooks_for_Hodaka.png') no-repeat center/cover;
+}
+
+
+body.bg3 {
+    background: url('./bg/Hodaka\'s_thank-you_to_Keisuke.png') no-repeat center/cover;
+}
+
+
+body.bg4 {
+    background: url('./bg/Hodaka_and_Nagi_sing_karaoke.webp') no-repeat center/cover;
+}
+
+
+body.bg5 {
+    background: url('./bg/Hodaka_finds_Ame_again.png') no-repeat center/cover;
+}
+
+
+body.bg6 {
+    background: url('./bg/Hodaka_looks_at_the_Sunshine_Girl_requests.webp') no-repeat center/cover;
+}
+
+
+body.bg7 {
+    background: url('./bg/Hodaka_meets_Hina.png') no-repeat center/cover;
+}
+
+
+body.bg8 {
+    background: url('./bg/K2C_Ltd._29.webp') no-repeat center/cover;
+}
+
+
+body.bg9 {
+    background: url('./bg/Nagi_gives_Hodaka_advice.png') no-repeat center/cover;
+}
+
+
+body.bg10 {
+    background: url('./bg/Otenki-girl.jp.jpg') no-repeat center/cover;
+}
+
+
+body.bg11 {
+    background: url('./bg/The_end.png') no-repeat center/cover;
+}
+
+
+body.bg12 {
+    background: url('./bg/The_trio_celebrate_the_completion_of_their_first_job.png') no-repeat center/cover;
 }
 
 .topUi {
@@ -52,13 +110,14 @@ body {
     font-family: 'Arita-buri-SemiBold';
     font-size: 32px;
     color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 .subTitle {
     display: flex;
     flex-direction: row;
     font-family: KOTRAHOPE;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 
@@ -90,9 +149,9 @@ body {
     color: #A0C4FF;
 }
 
-.bg1 {
+.ch1 {
     width: 122px;
-    height: 200px;
+    height: 312px;
     background-image: url("./ch/Hina_Amano_Profile.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,9 +159,9 @@ body {
     margin-top: 2%;
 }
 
-.bg2 {
+.ch2 {
     width: 126px;
-    height: 200px;
+    height: 321px;
     background-image: url("./ch/Hodaka_Morishima_Profile.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,8 +174,22 @@ body {
     color: white;
 }
 
+.quoteAndLoc {
+    display: flex;
+    flex-direction: row;
+}
+
+.loc {
+
+    font-family: 'Arita-buri-SemiBold';
+    font-size: 30px;
+    text-shadow: 3px 3px 6px black;
+
+}
+
 .quote {
     font-family: 'Arita-buri-SemiBold';
     font-size: 30px;
     text-shadow: 3px 3px 6px black;
+    height: 5%;
 }
