@@ -1,135 +1,114 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    line-height: 1;
+    background-image: url('./bg/Hina_and_Hodaka_eat_lunch_together.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-ol,
-ul {
-    list-style: none;
+.wrap {
+    width: 90%;
 }
 
-blockquote,
-q {
-    quotes: none;
+.topUi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+.logo {
+    width: 168px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.mainTitle {
+    font-family: 'Arita-buri-SemiBold';
+    font-size: 32px;
+    color: white;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: row;
+    font-family: KOTRAHOPE;
+    font-size: 28px;
+}
+
+
+.mal {
+    color: #FFADAD;
+}
+
+.umm {
+    color: #FFD6A5;
+}
+
+.so {
+    color: #FDFFB6;
+}
+
+.nyeo {
+    color: #CAFFBF;
+}
+
+.blankText {
+    width: 16px;
+}
+
+.nal {
+    color: #9BF6FF;
+}
+
+.sse {
+    color: #A0C4FF;
+}
+
+.bg1 {
+    width: 122px;
+    height: 313px;
+    background-image: url("./ch/Hina_Amano_Profile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+    margin-top: 2%;
+}
+
+.bg2 {
+    width: 126px;
+    height: 320px;
+    background-image: url("./ch/Hodaka_Morishima_Profile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+    margin-top: 2%;
+}
+
+.weather_info {
+    font-family: 'Arita-buri-SemiBold';
+    color: white;
+}
+
+.skyBlueRightNow {
+    font-family: 'Arita-buri-SemiBold';
+    font-size: 30px;
 }
