@@ -1,6 +1,6 @@
-const API_KEY = "8b527b12bfe6407eb95c9af9f5436455";
 
 function onGeoOk(position) {
+    const API_KEY = "8b527b12bfe6407eb95c9af9f5436455";
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     console.log(lat)
@@ -12,9 +12,29 @@ function onGeoOk(position) {
             console.log(url);
             console.log(data)
         });
+
+    $.ajax({
+        url: url,
+        dataType: "json",
+        type: "GET",
+        async: "false",
+        success: function (resp) {
+            $('.city').text(resp.name + ',');
+            $('.temp').text(Math.round(resp.main.temp) + "C°");
+            $('.desc').text(resp.weather[0].description);
+        }
+    })
+
+    // $('#where').innerHTML = resp.name;
 }
 function onGeoError() {
     alert("Can't find you. No weather for you.");
 }
 
+
+function where() {
+
+}
+
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
